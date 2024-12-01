@@ -25,10 +25,15 @@
     To find the total distance between the left list and the right list, add up the distances between all of the pairs you found. In the example above, this is 2 + 1 + 0 + 1 + 2 + 5, a total distance of 11!
  */
 
+// this import not part of original code. since the input is based on login, instead fetching the data from local input file for easy execution
+import text from './input.js';
+
 async function fetchData (url) {
 
-    const data = await fetch(url);
-    const text = await data.text();
+    // Original code to fetch the input. since the input is based on login, commented it and instead fetching the data from local input file for easy execution
+    //const data = await fetch(url);
+    //const text = await data.text();
+
     const arr = text?.trim().split(/\s+/);
 
     let list1 = [];
@@ -55,4 +60,6 @@ async function fetchData (url) {
     console.log(sumOfDiff);
 }
 
-fetchData('https://adventofcode.com/2024/day/1/input');
+// Original code to fetch the input. since the input is based on login, commented it and instead fetching the data from local input file for easy execution
+// fetchData('https://adventofcode.com/2024/day/1/input');
+fetchData();
